@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="UserControls">
+      <UniqueIdentifier>{703202e1-83cf-482f-a6b2-9255aaa20810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{59e49998-adbf-4872-85af-f6e5f99fdd38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Classes">
+      <UniqueIdentifier>{992fec6c-f6d3-401a-99dd-81c88f26b8ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UC_Commandes">
+      <UniqueIdentifier>{a385cd2d-e8fa-46db-abae-e14f4a663a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserControls\UC_Personnels">
+      <UniqueIdentifier>{70f9bdea-d72e-4b12-868d-4fa9c8632888}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Personnel.cpp">
+      <Filter>UserControls</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Client.cpp">
+      <Filter>UserControls</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Commandes.cpp">
+      <Filter>UserControls</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Articles.cpp">
+      <Filter>UserControls</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Stats.cpp">
+      <Filter>UserControls</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Services.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Employes.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Clients.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Commandes.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Articles.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_LVBDD.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Statistique.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Commande_Ajouter.cpp">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Commande_Afficher.cpp">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Commande_Default.cpp">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Commande_Modifier.cpp">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Commande_Supprimer.cpp">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Commande_Afficher_Template.cpp">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Personnel_Default.cpp">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Personnel_Ajouter.cpp">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Personnel_Afficher.cpp">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Personnel_Modifier.cpp">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Personnel_Supprimer.cpp">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Articles_Afficher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Articles_Ajouter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Articles_Modifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Articles_Supprimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Clients_Afficher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Clients_Ajouter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Clients_Modifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UC_Clients_Supprimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel.h">
+      <Filter>UserControls</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Client.h">
+      <Filter>UserControls</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Commandes.h">
+      <Filter>UserControls</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Articles.h">
+      <Filter>UserControls</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Stats.h">
+      <Filter>UserControls</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Employes.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Clients.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Commandes.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Articles.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_LVBDD.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Statistique.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Ajouter.h">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Afficher.h">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Default.h">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Modifier.h">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Supprimer.h">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Afficher_Template.h">
+      <Filter>UserControls\UC_Commandes</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Default.h">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Ajouter.h">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Afficher.h">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Modifier.h">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Supprimer.h">
+      <Filter>UserControls\UC_Personnels</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Afficher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Ajouter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Modifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Supprimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Afficher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Ajouter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Modifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Supprimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Services.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{83FE0D62-A1C6-49FA-876C-361612316FB7}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>POOA2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CL_Articles.cpp" />
+    <ClCompile Include="CL_Clients.cpp" />
+    <ClCompile Include="CL_Commandes.cpp" />
+    <ClCompile Include="CL_Employes.cpp" />
+    <ClCompile Include="CL_LVBDD.cpp" />
+    <ClCompile Include="CL_Services.cpp" />
+    <ClCompile Include="CL_Statistique.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="UC_Articles.cpp" />
+    <ClCompile Include="UC_Articles_Afficher.cpp" />
+    <ClCompile Include="UC_Articles_Ajouter.cpp" />
+    <ClCompile Include="UC_Articles_Modifier.cpp" />
+    <ClCompile Include="UC_Articles_Supprimer.cpp" />
+    <ClCompile Include="UC_Client.cpp" />
+    <ClCompile Include="UC_Clients_Afficher.cpp" />
+    <ClCompile Include="UC_Clients_Ajouter.cpp" />
+    <ClCompile Include="UC_Clients_Modifier.cpp" />
+    <ClCompile Include="UC_Clients_Supprimer.cpp" />
+    <ClCompile Include="UC_Commandes.cpp" />
+    <ClCompile Include="UC_Commande_Afficher.cpp" />
+    <ClCompile Include="UC_Commande_Afficher_Template.cpp" />
+    <ClCompile Include="UC_Commande_Ajouter.cpp" />
+    <ClCompile Include="UC_Commande_Default.cpp" />
+    <ClCompile Include="UC_Commande_Modifier.cpp" />
+    <ClCompile Include="UC_Commande_Supprimer.cpp" />
+    <ClCompile Include="UC_Personnel.cpp" />
+    <ClCompile Include="UC_Personnel_Afficher.cpp" />
+    <ClCompile Include="UC_Personnel_Ajouter.cpp" />
+    <ClCompile Include="UC_Personnel_Default.cpp" />
+    <ClCompile Include="UC_Personnel_Modifier.cpp" />
+    <ClCompile Include="UC_Personnel_Supprimer.cpp" />
+    <ClCompile Include="UC_Stats.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CL_Articles.h" />
+    <ClInclude Include="CL_Clients.h" />
+    <ClInclude Include="CL_Commandes.h" />
+    <ClInclude Include="CL_Employes.h" />
+    <ClInclude Include="CL_LVBDD.h" />
+    <ClInclude Include="CL_Services.h" />
+    <ClInclude Include="CL_Statistique.h" />
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Articles.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Afficher.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Ajouter.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Modifier.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Articles_Supprimer.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Client.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Afficher.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Ajouter.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Modifier.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Clients_Supprimer.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Commandes.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Afficher.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Afficher_Template.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Ajouter.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Default.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Modifier.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Commande_Supprimer.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Afficher.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Ajouter.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Default.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Modifier.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Personnel_Supprimer.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="UC_Stats.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Articles.resx">
+      <DependentUpon>UC_Articles.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Articles_Afficher.resx">
+      <DependentUpon>UC_Articles_Afficher.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Articles_Ajouter.resx">
+      <DependentUpon>UC_Articles_Ajouter.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Articles_Modifier.resx">
+      <DependentUpon>UC_Articles_Modifier.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Articles_Supprimer.resx">
+      <DependentUpon>UC_Articles_Supprimer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Client.resx">
+      <DependentUpon>UC_Client.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Clients_Afficher.resx">
+      <DependentUpon>UC_Clients_Afficher.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Clients_Ajouter.resx">
+      <DependentUpon>UC_Clients_Ajouter.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Clients_Modifier.resx">
+      <DependentUpon>UC_Clients_Modifier.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Clients_Supprimer.resx">
+      <DependentUpon>UC_Clients_Supprimer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Commandes.resx">
+      <DependentUpon>UC_Commandes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Commande_Afficher.resx">
+      <DependentUpon>UC_Commande_Afficher.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Commande_Afficher_Template.resx">
+      <DependentUpon>UC_Commande_Afficher_Template.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Commande_Ajouter.resx">
+      <DependentUpon>UC_Commande_Ajouter.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Commande_Default.resx">
+      <DependentUpon>UC_Commande_Default.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Commande_Modifier.resx">
+      <DependentUpon>UC_Commande_Modifier.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Commande_Supprimer.resx">
+      <DependentUpon>UC_Commande_Supprimer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Personnel.resx">
+      <DependentUpon>UC_Personnel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Personnel_Afficher.resx">
+      <DependentUpon>UC_Personnel_Afficher.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Personnel_Ajouter.resx">
+      <DependentUpon>UC_Personnel_Ajouter.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Personnel_Default.resx">
+      <DependentUpon>UC_Personnel_Default.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Personnel_Modifier.resx">
+      <DependentUpon>UC_Personnel_Modifier.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Personnel_Supprimer.resx">
+      <DependentUpon>UC_Personnel_Supprimer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Stats.resx">
+      <DependentUpon>UC_Stats.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
