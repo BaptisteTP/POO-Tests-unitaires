@@ -1,0 +1,150 @@
+  POOA2.MyForm.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Articles.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Articles_Afficher.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Articles_Ajouter.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Articles_Modifier.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Articles_Supprimer.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Client.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Clients_Afficher.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Clients_Ajouter.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Clients_Modifier.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Clients_Supprimer.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Commandes.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Commande_Afficher.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Commande_Afficher_Template.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Commande_Ajouter.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Commande_Default.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Commande_Modifier.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Commande_Supprimer.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Personnel.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Personnel_Afficher.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Personnel_Ajouter.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Personnel_Default.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Personnel_Modifier.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Personnel_Supprimer.resources - Embedded, ContainedInManifestFile, 
+  POOA2.UC_Stats.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly POO-A2, Version=0.0.*, Culture=Langue indifférente (Pays indifférent): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CL_Services: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ajouterPersonne(String, String, String, String, UInt32, String, String): PrivateScope, Public, HideBySig
+    test(): PrivateScope, Public, HideBySig
+    supprimerPersonne(UInt32): PrivateScope, Public, HideBySig
+    modifierPersonne(UInt32, String, String, String, UInt32): PrivateScope, Public, HideBySig
+    afficherPersonne(String, String): PrivateScope, Public, HideBySig
+    afficherToutPersonne(String): PrivateScope, Public, HideBySig
+    doExistClient(String, String): PrivateScope, Public, HideBySig
+    ajouterClient(String, String, String, String, String, String, String): PrivateScope, Public, HideBySig
+    ajouterAdresseClient(UInt32, String, String): PrivateScope, Public, HideBySig
+    supprimerAdresseClient(UInt32, String, String): PrivateScope, Public, HideBySig
+    modifierAdresseClient(UInt32, String, String): PrivateScope, Public, HideBySig
+    supprimerClient(UInt32): PrivateScope, Public, HideBySig
+    modifierClient(UInt32, String, String, String, UInt32): PrivateScope, Public, HideBySig
+    afficherClient(String): PrivateScope, Public, HideBySig
+    ajouterCommande(String, String, String, String, String, String, String, Int32): PrivateScope, Public, HideBySig
+    supprimerCommande(UInt32): PrivateScope, Public, HideBySig
+    modifierCommande(UInt32, UInt32, String, Int32): PrivateScope, Public, HideBySig
+    afficherCommande(String): PrivateScope, Public, HideBySig
+    afficherCommande(UInt32): PrivateScope, Public, HideBySig
+    afficherToutCommande(String): PrivateScope, Public, HideBySig
+    CheckArticleCommande(String): PrivateScope, Public, HideBySig
+    ajouterArticle(String, String, String, String, UInt32, Double): PrivateScope, Public, HideBySig
+    supprimerArtcile(UInt32): PrivateScope, Public, HideBySig
+    ModifierArticle(UInt32, String, String, String, UInt32, UInt32): PrivateScope, Public, HideBySig
+    afficherArticle(UInt32, String): PrivateScope, Public, HideBySig
+    afficherTousArticles(String): PrivateScope, Public, HideBySig
+    afficherstat10sup(String): PrivateScope, Public, HideBySig
+    afficherstat10less(String): PrivateScope, Public, HideBySig
+    afficheCA(): PrivateScope, Public, HideBySig
+    afficheValue(): PrivateScope, Public, HideBySig
+Class POOA2.UC_Personnel_Afficher: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Personnel_Supprimer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Personnel_Modifier: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Personnel_Ajouter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Personnel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Clients_Afficher: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Clients_Ajouter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Clients_Modifier: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Clients_Supprimer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Client: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Commande_Afficher: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Commande_Ajouter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Commande_Default: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Commande_Modifier: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Commande_Supprimer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Commandes: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Articles_Afficher: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Articles_Ajouter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Articles_Modifier: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Articles_Supprimer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Articles: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Stats: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Commande_Afficher_Template: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOA2.UC_Personnel_Default: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
