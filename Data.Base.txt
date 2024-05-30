@@ -1,0 +1,100 @@
+CREATE TABLE Adresse(
+   ID_adresse INT IDENTITY (1,1) NOT NULL,
+   numero VARCHAR(50),
+   rue VARCHAR(255),
+   complement VARCHAR(255),
+   ville VARCHAR(255),
+   code_postal VARCHAR(20),
+   pays VARCHAR(255),
+   PRIMARY KEY(ID_adresse)
+);
+
+CREATE TABLE Article(
+   ID_article INT IDENTITY (1,1) NOT NULL,
+   nom VARCHAR(255),
+   categorie VARCHAR(255),
+   couleur VARCHAR(50),
+   reference VARCHAR(255),
+   quantite INT,
+   prix_achat CURRENCY,
+   PRIMARY KEY(ID_article)
+);
+
+CREATE TABLE Client(
+   ID_client INT IDENTITY (1,1) NOT NULL,
+   nom VARCHAR(255),
+   prenom VARCHAR(255),
+   email VARCHAR(255),
+   tel VARCHAR(15),
+   date_naissance DATE,
+   ID_adresse INT,
+   ID_adresse_1 INT,
+   PRIMARY KEY(ID_client),
+   UNIQUE(ID_adresse),
+   UNIQUE(ID_adresse_1),
+   FOREIGN KEY(ID_adresse) REFERENCES Adresse(ID_adresse),
+   FOREIGN KEY(ID_adresse_1) REFERENCES Adresse(ID_adresse)
+);
+
+CREATE TABLE Promo(
+   ID_promo INT IDENTITY (1,1) NOT NULL,
+   nom VARCHAR(255),
+   date_debut DATETIME,
+   date_fin DATETIME,
+   reduction INT,
+   PRIMARY KEY(ID_promo)
+);
+
+CREATE TABLE personnel(
+   ID_personnel INT IDENTITY (1,1) NOT NULL,
+   prenom VARCHAR(255),
+   nom VARCHAR(255),
+   email VARCHAR(255),
+   tel VARCHAR(15),
+   date_embauche DATE,
+   ID_adresse INT,
+   ID_personnel_1 INT,
+   PRIMARY KEY(ID_personnel),
+   UNIQUE(ID_adresse),
+   UNIQUE(ID_personnel_1),
+   FOREIGN KEY(ID_adresse) REFERENCES Adresse(ID_adresse),
+   FOREIGN KEY(ID_personnel_1) REFERENCES personnel(ID_personnel)
+);
+
+CREATE TABLE Commande(
+   ID_commande INT IDENTITY (1,1) NOT NULL,
+   date_commande DATETIME,
+   date_livraison DATETIME,
+   date_solde DATETIME,
+   num_suivi VARCHAR(255),
+   ID_client INT NOT NULL,
+   PRIMARY KEY(ID_commande),
+   FOREIGN KEY(ID_client) REFERENCES Client(ID_client)
+);
+
+CREATE TABLE paiement(
+   ID_paiement INT IDENTITY (1,1) NOT NULL,
+   type VARCHAR(50),
+   montant CURRENCY,
+   date_paiement DATETIME,
+   ID_commande INT NOT NULL,
+   PRIMARY KEY(ID_paiement),
+   FOREIGN KEY(ID_commande) REFERENCES Commande(ID_commande)
+);
+
+CREATE TABLE Contenir(
+   ID_article INT ,
+   ID_commande INT,
+   quantité INT,
+   PRIMARY KEY(ID_article, ID_commande),
+   FOREIGN KEY(ID_article) REFERENCES Article(ID_article),
+   FOREIGN KEY(ID_commande) REFERENCES Commande(ID_commande)
+);
+
+CREATE TABLE Appliquer(
+   ID_commande INT,
+   ID_promo INT,
+   PRIMARY KEY(ID_commande, ID_promo),
+   FOREIGN KEY(ID_commande) REFERENCES Commande(ID_commande),
+   FOREIGN KEY(ID_promo) REFERENCES Promo(ID_promo)
+);
